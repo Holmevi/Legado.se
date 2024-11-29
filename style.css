@@ -24,7 +24,7 @@ a {
     align-items: center;
     position: fixed;
     background-color: rgb(39, 35, 46);
-    width: 100vw;
+    width: 100dvw;
     height: 60px;
     top: 0px;
     margin: 0px;
@@ -42,6 +42,7 @@ a {
     font-size: 36px;
     line-height: 40px;
     font-weight: 500;
+    color: white;
 }
 
 .se-logo {
@@ -49,19 +50,46 @@ a {
     display: inline;
     font-size: 36px;
     font-weight: 100;
+    color: white;
 }
 
-.nav-links {
+.menus-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: end;
+    height: fit-content;
+}
+  
+.main-menu {
+    display: flex;
     gap: 10px;
+    flex-direction: row;
+    margin: 5px 15px 5px 5px;
+}
+  
+.button {
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(100, 60, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 8px;
+    transition: 0.2s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: fit-content;
+    height: fit-content;
 }
 
-.nav-links img {                /* Gäller alla bild-element under nav-links */
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
+.button:hover {
+    background-color: rgb(94, 34, 190);
+    border-radius: 5px;
+    padding: 8px 11px;
+    margin: -3px;
+  }
 
 .main-page {
     scroll-behavior: smooth;
@@ -101,7 +129,7 @@ a {
     font-size: 22px;
     font-weight: 600;
     margin-top: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -109,7 +137,8 @@ a {
     color: rgb(209, 196, 231);
     font-size: 18px;
     line-height: 24px;
-    margin: 5px 10px 5px 10px;
+    margin: 10px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -142,7 +171,8 @@ a {
     color: rgb(209, 196, 231);
     font-size: 18px;
     line-height: 24px;
-    margin: 5px 10px 5px 10px;
+    margin: 10px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -169,7 +199,8 @@ a {
     color: rgb(209, 196, 231);
     font-size: 18px;
     line-height: 24px;
-    margin: 5px 10px 5px 10px;
+    margin: 10px;
+    font-weight: 300;
     text-align: center;
 }
 
@@ -177,7 +208,7 @@ a {
     color: white;
     font-size: 45px;
     font-weight: 200;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -189,7 +220,7 @@ a {
 }
 
 .text-container {
-    margin-left: 3dvh;
+    margin: 0px 40px;
 }
 
 .content-section p {
@@ -437,7 +468,6 @@ button:active {
 }
 
 @media screen and (max-width: 1024px) {
-
     .about-me {
         /* flex-direction: column;
         padding: 12px 0px;
@@ -454,12 +484,16 @@ button:active {
     }
 
     #name {
-        font-size: 38px;
-        font-weight: 300;
-        line-height: 40px;
+        font-size: 40px;
+        font-weight: 200;
+        line-height: 45px;
         text-align: center;
         margin-top: 10px;
         margin-bottom: 15px;
+    }
+
+    .header-text {
+        font-size: 40px;
     }
     
     #profession {
@@ -540,26 +574,61 @@ button:active {
 }
 
 @media screen and (max-width: 724px) {
+
     p {
         font-size: 12px;
         line-height: 18px;
     }
 
     .nav-bar {
-        height: 45px;
-        width: 103.8vw;
+        height: 80px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+        justify-content: start
+        
     }
 
     .legado-logo {
-        font-size: 26px;
+        font-size: 30px;
         line-height: 30px;
         font-weight: 500;
     }
     
     .se-logo {
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 30px;
+        line-height: 35px;
         font-weight: 100;
+    }
+
+    .main-menu {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        margin: 5px 15px 5px 5px;
+    }
+
+    .main-menu {
+        display: flex;
+        gap: 10px;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+      
+    .button {
+        font-weight: 500;
+        font-size: 12px;
+        cursor: pointer;
+        background-color: rgb(100, 60, 160);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 3px 6px;
+        transition: 0.2s;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        width: fit-content;
+        height: fit-content;
     }
     
     .nav-links img {                /* Gäller alla bild-element under nav-links */
@@ -576,7 +645,7 @@ button:active {
 
     .about-me {
         margin: 10px auto;
-        top: 50px;
+        top: 90px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -584,7 +653,7 @@ button:active {
 
     .content-photo-right {
         margin: 10px auto;
-        top: 50px;
+        top: 90px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -592,7 +661,7 @@ button:active {
 
     .content-photo-left {
         margin: 10px auto;
-        top: 50px;
+        top: 90px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -602,20 +671,22 @@ button:active {
         margin-top: 0px;
         width: 330px;
         border-radius: 10px;
+        height: auto;
     }
 
     .content-image {
         margin-top: 0px;
         width: 330px;
         border-radius: 10px;
+        height: auto;
     }
     
     #name {
         font-size: 30px;
-        font-weight: 300;
+        font-weight: 200;
         line-height: 30px;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     
     #profession {

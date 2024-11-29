@@ -230,7 +230,7 @@ a {
     position: relative;     /* Egna ändringar */
     top: 80px;              
     margin: 0px auto;
-    width: 900px;
+    width: 250px;
     height: 70px;           /* Ändrat från 85vh */
     /* border: 1px solid black; */
 }
@@ -323,8 +323,6 @@ a {
     justify-content: center;
     width: 900px;
 }
-
-
 
 .img-container {
     width: 100%;
@@ -567,6 +565,13 @@ button:active {
     .nav-links img {                /* Gäller alla bild-element under nav-links */
         height: 25px;
         width: 25px;
+    }
+
+    .main-page {
+        scroll-behavior: smooth;
+        flex-direction: column;
+        display: flex;
+        gap: 0px;
     }
 
     .about-me {

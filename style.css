@@ -476,6 +476,24 @@ button:active {
 }
 
 @media screen and (max-width: 1024px) {
+    html {
+        scroll-padding-top: 90px;
+    }
+
+    .nav-bar {
+        height: 80px;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        width: 400px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 5px 15px 5px 5px;
+    }
+
     .about-me {
         /* flex-direction: column;
         padding: 12px 0px;
@@ -483,6 +501,7 @@ button:active {
         flex-direction: column;
         max-width: 500px;
         height: fit-content;           /* Ändrat från 85vh */
+        top: 95px;
         gap: 0px;
     }
 
@@ -529,6 +548,7 @@ button:active {
         max-width: 500px;
         height: fit-content;           /* Ändrat från 85vh */
         gap: 20px;
+        top: 95px;
     }
 
     .content-photo-left {
@@ -539,6 +559,7 @@ button:active {
         max-width: 500px;
         height: fit-content;           /* Ändrat från 85vh */
         gap: 20px;
+        top: 95px;
     }
 
     .content-section {
@@ -585,7 +606,7 @@ button:active {
 
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 95px;
+        scroll-padding-top: 120px;
     }
 
     p {
@@ -594,17 +615,21 @@ button:active {
     }
 
     .nav-bar {
-        height: 80px;
+        height: 110px;
         width: 100vw;
         padding: 0px;
         flex-direction: column-reverse;
-        justify-content: start
         
     }
 
+    .top-logo {
+        padding: 8px;
+    }
+
     .legado-logo {
+        margin-top: 50px;
         font-size: 30px;
-        line-height: 30px;
+        line-height: 35px;
         font-weight: 500;
     }
     
@@ -616,10 +641,14 @@ button:active {
 
     .menus-container {
         height: 36px;
+        margin-bottom: 5px;
     }
 
     .main-menu {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
         gap: 10px;
         flex-direction: row;
         margin: 5px 15px 5px 5px;
@@ -629,7 +658,7 @@ button:active {
         display: flex;
         gap: 10px;
         flex-direction: row;
-        margin-top: 10px;
+        margin: 6px 6px 6px 6px;
     }
       
     .button {
@@ -657,7 +686,7 @@ button:active {
 
     .about-me {
         margin: 10px auto;
-        top: 90px;
+        top: 115px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -665,7 +694,7 @@ button:active {
 
     .content-photo-right {
         margin: 10px auto;
-        top: 90px;
+        top: 115px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -673,7 +702,7 @@ button:active {
 
     .content-photo-left {
         margin: 10px auto;
-        top: 90px;
+        top: 115px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;

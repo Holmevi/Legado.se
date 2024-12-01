@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
 body {
     top: 0px;
     background-color: #242526;
+    height: 100%;
+    width: 100%;
+    overflow: -moz-hidden-unscrollable;
     color: white;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
@@ -24,7 +32,7 @@ a {
     align-items: center;
     position: fixed;
     background-color: rgb(39, 35, 46);
-    width: 100dvw;
+    width: 100vw;
     height: 60px;
     top: 0px;
     margin: 0px;
@@ -421,7 +429,7 @@ a {
 
 footer {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     bottom: 0px;
     padding: 20px 0px;
@@ -575,6 +583,11 @@ button:active {
 
 @media screen and (max-width: 724px) {
 
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 95px;
+    }
+
     p {
         font-size: 12px;
         line-height: 18px;
@@ -601,6 +614,10 @@ button:active {
         font-weight: 100;
     }
 
+    .menus-container {
+        height: 36px;
+    }
+
     .main-menu {
         display: flex;
         gap: 10px;
@@ -616,20 +633,15 @@ button:active {
     }
       
     .button {
-        font-weight: 500;
-        font-size: 12px;
-        cursor: pointer;
-        background-color: rgb(100, 60, 160);
-        color: white;
-        border: none;
-        border-radius: 5px;
         padding: 3px 6px;
         transition: 0.2s;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-        width: fit-content;
-        height: fit-content;
     }
+
+    .button:hover {
+        padding: 6px 9px;
+        margin: -3px;
+      }
     
     .nav-links img {                /* Gäller alla bild-element under nav-links */
         height: 25px;

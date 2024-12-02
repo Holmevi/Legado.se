@@ -6,7 +6,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -28,15 +28,15 @@ a {
 .nav-bar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     background-color: rgb(39, 35, 46);
     width: 100vw;
-    height: 60px;
+    height: 70px;
     top: 0px;
     margin: 0px;
-    padding: 0px 30px;
+    padding: 0px 0px;
     display: flex;
     gap: 0px;
     margin: 0px;
@@ -44,19 +44,44 @@ a {
     z-index: 1;
 }
 
+.menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    height: 70px;
+    top: 0px;
+    margin: 0px;
+    gap: 0px;
+    margin: 0px;
+    z-index: 1;
+}
+
+.top-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.TravelPhotoDice-Sq {
+    height: 50px;
+}
+
 .legado-logo {
     font-family: 'Piazzolla', serif;
     display: inline;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 50px;
     font-weight: 500;
     color: white;
+    margin-left: 10px;
 }
 
 .se-logo {
     font-family: 'Roboto', sans-serif;
     display: inline;
-    font-size: 36px;
+    font-size: 33px;
+    line-height: 60px;
     font-weight: 100;
     color: white;
 }
@@ -73,7 +98,7 @@ a {
     display: flex;
     gap: 10px;
     flex-direction: row;
-    margin: 5px 15px 5px 5px;
+    margin: 5px 0px 5px 5px;
 }
   
 .button {
@@ -84,7 +109,7 @@ a {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 4px 6px;
     transition: 0.2s;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
@@ -95,9 +120,62 @@ a {
 .button:hover {
     background-color: rgb(94, 34, 190);
     border-radius: 5px;
-    padding: 8px 11px;
+    padding: 7px 9px;
+    margin: -3px;
+}
+
+.sub-button:hover {
+    background-color: rgb(94, 34, 190);
+    border-radius: 5px;
+    padding: 6px;
     margin: -3px;
   }
+
+.sub-menu {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    margin: 3px 0px 5px 5px;
+}
+
+.sub-button {
+    font-weight: 300;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgb(59, 35, 95);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    transition: 0.2s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.square-top-button {
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(100, 60, 160);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 3px;
+    transition: 0.2s;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.square-top-button:hover {
+    background-color: rgb(94, 34, 190);
+    border-radius: 5px;
+    padding: 4px 6px;
+    margin: -3px;
+}
 
 .main-page {
     scroll-behavior: smooth;
@@ -109,7 +187,7 @@ a {
 .about-me {
     background-color: rgb(26, 23, 31);
     position: relative;     /* Egna ändringar */
-    top: 80px;              
+    top: 85px;              
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +238,7 @@ a {
     background-color: rgb(26, 23, 31);
     color: rgb(209, 196, 231);
     position: relative;     /* Egna ändringar */
-    top: 80px;              
+    top: 85px;              
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,7 +266,7 @@ a {
     background-color: rgb(26, 23, 31);
     color: rgb(209, 196, 231);
     position: relative;     /* Egna ändringar */
-    top: 80px;              
+    top: 85px;              
     display: flex;
     justify-content: center;
     align-items: center;
@@ -263,6 +341,12 @@ a {
     line-height: 24px;
     margin: 5px 10px 5px 10px;
     text-align: center;
+}
+
+.sq-logo {
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 .end {
@@ -475,13 +559,9 @@ button:active {
     color: black;
 }
 
-@media screen and (max-width: 1024px) {
-    html {
-        scroll-padding-top: 90px;
-    }
-
+@media screen and (max-width: 940px) {
     .nav-bar {
-        height: 80px;
+        padding: 0px 30px;
     }
 
     .main-menu {
@@ -491,7 +571,17 @@ button:active {
         width: 400px;
         gap: 10px;
         flex-direction: row;
-        margin: 5px 15px 5px 5px;
+        margin: 6px 6px 3px 6px;
+    }
+
+    .sub-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        width: 400px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 3px 6px 6px 6px;
     }
 
     .about-me {
@@ -606,7 +696,7 @@ button:active {
 
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 120px;
+        scroll-padding-top: 125px;
     }
 
     p {
@@ -615,22 +705,37 @@ button:active {
     }
 
     .nav-bar {
+        height: 115px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .menu-wrap {
         height: 110px;
         width: 100vw;
         padding: 0px;
         flex-direction: column-reverse;
-        
     }
 
     .top-logo {
-        padding: 8px;
+        padding: 10px 4px 3px 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .TravelPhotoDice-Sq {
+        height: 36px;
     }
 
     .legado-logo {
-        margin-top: 50px;
         font-size: 30px;
         line-height: 35px;
         font-weight: 500;
+        margin: 0px;
     }
     
     .se-logo {
@@ -641,7 +746,7 @@ button:active {
 
     .menus-container {
         height: 36px;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
     }
 
     .main-menu {
@@ -651,24 +756,27 @@ button:active {
         width: 350px;
         gap: 10px;
         flex-direction: row;
-        margin: 5px 15px 5px 5px;
+        margin: 6px 6px 3px 6px;
     }
 
-    .main-menu {
+    .sub-menu {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 350px;
         gap: 10px;
         flex-direction: row;
-        margin: 6px 6px 6px 6px;
+        margin: 3px 6px 6px 6px;
     }
       
     .button {
-        padding: 3px 6px;
+        padding: 3px 4px;
         transition: 0.2s;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     }
 
     .button:hover {
-        padding: 6px 9px;
+        padding: 6px 7px;
         margin: -3px;
       }
     
@@ -686,7 +794,7 @@ button:active {
 
     .about-me {
         margin: 10px auto;
-        top: 115px;
+        top: 120px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -694,7 +802,7 @@ button:active {
 
     .content-photo-right {
         margin: 10px auto;
-        top: 115px;
+        top: 120px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;
@@ -702,7 +810,7 @@ button:active {
 
     .content-photo-left {
         margin: 10px auto;
-        top: 115px;
+        top: 120px;
         padding: 8px 12px 8px 12px;
         max-width: 350px;
         gap: 10px;

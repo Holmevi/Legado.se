@@ -711,6 +711,10 @@ button:active {
     .projects-container {
         max-width: 400px;
     }
+
+    .end {
+        top: 95px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -747,7 +751,7 @@ button:active {
         justify-content: space-between;
         width: 350px;
         background-color: rgb(26, 23, 31);
-        border-radius: 5px;
+        border-radius: 10px;
     }
 
     .travelphotodice-sq {
@@ -897,5 +901,9 @@ button:active {
         height: 40px;
         width: 200px;
         font-size: 18px;
+    }
+
+    .end {
+        top: 130px;
     }
 }

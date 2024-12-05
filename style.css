@@ -61,9 +61,16 @@ a {
 .top-logo {
     display: flex;
     justify-content: center;
+    margin-top: 5px;
 }
 
-.TravelPhotoDice-Sq {
+.top-square-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.travelphotodice-sq {
     height: 50px;
 }
 
@@ -168,6 +175,15 @@ a {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     width: fit-content;
     height: fit-content;
+    /* 3D button */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: inset 0px -2px 1px rgba(0,0,0,0.5),
+    inset 0 2px 1px rgba(255,255,255,0.5);
+    background: linear-gradient(top, rgb(59, 35, 95), rgb(59, 35, 95));
+    background: -webkit-linear-gradient(top, rgb(59, 35, 95)4, rgb(59, 35, 95)4);
+    background: -moz-linear-gradient(top, rgb(59, 35, 95)4, rgb(59, 35, 95)4);
+    background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(59, 35, 95)4), color-stop(100%, rgb(59, 35, 95)4));
 }
 
 .square-top-button:hover {
@@ -568,7 +584,7 @@ button:active {
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
-        width: 400px;
+        width: 350px;
         gap: 10px;
         flex-direction: row;
         margin: 6px 6px 3px 6px;
@@ -578,7 +594,7 @@ button:active {
         display: flex;
         flex-wrap: wrap;
         justify-content: right;
-        width: 400px;
+        width: 350px;
         gap: 10px;
         flex-direction: row;
         margin: 3px 6px 6px 6px;
@@ -692,7 +708,7 @@ button:active {
     }
 }
 
-@media screen and (max-width: 724px) {
+@media screen and (max-width: 800px) {
 
     html {
         scroll-behavior: smooth;
@@ -727,7 +743,7 @@ button:active {
         width: 350px;
     }
 
-    .TravelPhotoDice-Sq {
+    .travelphotodice-sq {
         height: 36px;
     }
 

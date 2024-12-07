@@ -72,6 +72,7 @@ a {
 .top-square-wrap {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 6px;
 }
 
@@ -79,24 +80,60 @@ a {
     height: 50px;
 }
 
-.legado-logo {
-    font-family: 'Piazzolla', serif;
-    display: inline;
-    font-size: 35px;
-    line-height: 50px;
-    font-weight: 500;
-    color: white;
-    margin-left: 10px;
+.nav-legado-buttons {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    border: solid black 3px;
+    border-radius: 24px;
+    height: 50px;
 }
+  
+  /* .nav-legado-buttons:hover {
+    box-shadow: 0px 0px 3px 3px rgb(255, 255, 255, 0.3);
+  } */
+  
+  .legado-se-button {
+    border: solid 0px white;
+    border-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    transition: 250ms;
+    width: 170px;
+    height: 44px;
+    padding: 0px 0px;
+    padding-left: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+  }
 
-.se-logo {
-    font-family: 'Roboto', sans-serif;
+  .yin-yang {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 44px;
+    padding: 0px 0px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 0px;
+    object-fit: cover;
+  }
+  
+  .legado {
+    font-family: "Piazzolla", serif;
     display: inline;
-    font-size: 33px;
-    line-height: 60px;
-    font-weight: 100;
-    color: white;
-}
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: 900;
+  }
+  
+  .tech {
+    font-family: "Roboto", sans-serif;
+    display: inline;
+    font-size: 32px;
+    font-weight: 300;
+  }
 
 .menus-container {
     display: flex;
@@ -116,7 +153,6 @@ a {
 .button {
     font-weight: 500;
     font-size: 14px;
-    cursor: pointer;
     background-color: rgb(100, 60, 160);
     color: white;
     border: none;
@@ -170,7 +206,7 @@ a {
     font-weight: 500;
     font-size: 14px;
     cursor: pointer;
-    background-color: rgb(100, 60, 160);
+    background-color: rgb(59, 35, 95);
     color: white;
     border: none;
     border-radius: 5px;
@@ -194,8 +230,8 @@ a {
 .square-top-button:hover {
     background-color: rgb(94, 34, 190);
     border-radius: 5px;
-    padding: 4px 6px;
-    margin: -3px;
+    padding: 3px 5px;
+    margin: -2px;
 }
 
 .main-page {
@@ -552,7 +588,7 @@ footer {
 
 }
 
-button {
+.project-button {
     border: solid 2px white;
     border-radius: 6px;
     transition: 250ms;
@@ -567,11 +603,11 @@ button {
     box-shadow: 0 0 20px rgb(228, 228, 255);
 }
 
-button:hover {
+.project-button:hover {
     background-color: rgb(35, 35, 179);
 }
 
-button:active {
+.project-button:active {
     background-color: rgb(122, 122, 233);
 }
 
@@ -717,7 +753,7 @@ button:active {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 840px) {
 
     html {
         scroll-behavior: smooth;
@@ -754,23 +790,51 @@ button:active {
         border-radius: 10px;
     }
 
+    .top-square-wrap {
+        flex-direction: row-reverse;
+    }
+
     .travelphotodice-sq {
         height: 36px;
     }
 
-    .legado-logo {
-        font-size: 30px;
-        line-height: 35px;
-        font-weight: 500;
-        margin: 0px;
-        margin-left: 5px;
+    .nav-legado-buttons {
+        border-radius: 24px;
+        height: 42px;
     }
+
+    .legado-se-button {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 150px;
+        height: 36px;
+      }
     
-    .se-logo {
-        font-size: 30px;
+      .yin-yang {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        height: 36px;
+        padding: 0px 0px;
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        margin: 0px;
+        object-fit: cover;
+      }
+      
+      .legado {
+        font-family: "Piazzolla", serif;
+        display: inline;
+        font-size: 28px;
         line-height: 35px;
-        font-weight: 100;
-    }
+        font-weight: 900;
+      }
+      
+      .tech {
+        font-family: "Roboto", sans-serif;
+        display: inline;
+        font-size: 28px;
+        font-weight: 300;
+      }
 
     .menus-container {
         height: 36px;

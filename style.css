@@ -66,7 +66,7 @@ a {
 .top-logo {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 .top-square-wrap {
@@ -82,9 +82,9 @@ a {
 
 .nav-legado-buttons {
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
     border: solid black 3px;
-    border-radius: 24px;
+    border-radius: 25px;
     height: 50px;
 }
   
@@ -95,29 +95,30 @@ a {
   .legado-se-button {
     border: solid 0px white;
     border-radius: 0px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
     transition: 250ms;
     width: 170px;
-    height: 44px;
+    height: 45px;
     padding: 0px 0px;
     padding-left: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     font-size: 20px;
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: black;
     margin: 0px;
   }
 
   .yin-yang {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    height: 44px;
-    padding: 0px 0px;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
+    height: 45px;
+    padding: 0px;
+    background-color: black;
     margin: 0px;
     object-fit: cover;
+    position: relative;
+    left: 0px;
   }
   
   .legado {
@@ -786,8 +787,11 @@ footer {
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 350px;
+        height: 52px;
         background-color: rgb(26, 23, 31);
         border-radius: 10px;
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
     }
 
     .top-square-wrap {
@@ -799,25 +803,23 @@ footer {
     }
 
     .nav-legado-buttons {
-        border-radius: 24px;
+        border-radius: 21px;
         height: 42px;
     }
 
     .legado-se-button {
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
         width: 150px;
         height: 36px;
       }
     
       .yin-yang {
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
         height: 36px;
         padding: 0px 0px;
-        background-color: rgb(255, 255, 255);
-        cursor: pointer;
-        margin: 0px;
+        background-color: black;
         object-fit: cover;
       }
       
@@ -825,14 +827,15 @@ footer {
         font-family: "Piazzolla", serif;
         display: inline;
         font-size: 28px;
-        line-height: 35px;
+        line-height: 22px;
         font-weight: 900;
       }
       
       .tech {
         font-family: "Roboto", sans-serif;
         display: inline;
-        font-size: 28px;
+        font-size: 26px;
+        line-height: 22px;
         font-weight: 300;
       }
 

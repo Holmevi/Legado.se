@@ -363,6 +363,12 @@ a {
     border-radius: 10px;
 }
 
+.sponsor-image {
+    margin-top: 3px;
+    height: 420px;
+    border-radius: 10px;
+}
+
 .text-container {
     margin: 0px 40px;
 }

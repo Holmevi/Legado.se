@@ -358,14 +358,14 @@ a {
 }
 
 .content-image {
-    margin-top: 3px;
+    margin: 2px 2px 0px 2px;
     height: 400px;
     border-radius: 10px;
 }
 
 .sponsor-image {
-    margin-top: 3px;
-    height: 420px;
+    margin: 2px 2px 0px 2px;
+    width: 412px;
     border-radius: 10px;
 }
 

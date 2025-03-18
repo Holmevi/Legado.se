@@ -82,8 +82,8 @@ a {
 
 .nav-legado-buttons {
     display: flex;
-    background-color: white;
-    border: solid black 3px;
+    background-color: rgb(59, 35, 95);
+    border: solid rgb(100, 60, 160) 3px;
     border-radius: 25px;
     height: 50px;
 }
@@ -99,26 +99,25 @@ a {
     border-bottom-left-radius: 22px;
     transition: 250ms;
     width: 170px;
-    height: 45px;
-    padding: 0px 0px;
+    height: 44px;
+    padding: 0px;
     padding-left: 15px;
-    background-color: white;
+    background-color: rgb(59, 35, 95);
     font-size: 20px;
     font-weight: 700;
-    color: black;
+    color: white;
     margin: 0px;
   }
 
   .yin-yang {
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 45px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    height: 40px;
     padding: 0px;
-    background-color: black;
     margin: 0px;
+    margin-top: 4px;
     object-fit: cover;
     position: relative;
-    left: 0px;
   }
   
   .legado {
@@ -415,7 +414,7 @@ a {
 
 .end {
     position: relative;     /* Egna ändringar */
-    top: 80px;              
+    top: 45px;              
     margin: 0px auto;
     width: 250px;
     height: 70px;           /* Ändrat från 85vh */
@@ -578,9 +577,9 @@ a {
 footer {
     position: fixed;
     width: 100vw;
-    height: 60px;
+    height: 30px;
     bottom: 0px;
-    padding: 20px 0px;
+    padding: 10px 0px;
     background-color: rgb(39, 35, 46);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     /* border-top: 1px black solid; */
@@ -589,10 +588,9 @@ footer {
 
 .footer-licence {
     text-align: center;
-    color: white;
-    font-size: 15px;
+    color: rgb(209, 196, 231);
+    font-size: 10px;
     font-weight: 300;
-
 }
 
 .project-button {
@@ -756,7 +754,7 @@ footer {
     }
 
     .end {
-        top: 95px;
+        top: 55px;
     }
 }
 
@@ -852,11 +850,11 @@ footer {
       }
     
       .yin-yang {
-        border-top-right-radius: 16px;
-        border-bottom-right-radius: 16px;
-        height: 36px;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        height: 32px;
         padding: 0px 0px;
-        background-color: black;
+        margin-top: 4px;
         object-fit: cover;
       }
       
@@ -1008,6 +1006,6 @@ footer {
     }
 
     .end {
-        top: 130px;
+        top: 95px;
     }
 }

@@ -1015,3 +1015,430 @@ footer {
         top: 95px;
     }
 }
+
+@media screen and (max-width: 480px) { /* iPhone MAX*/
+    html, body {
+        scroll-padding-top: 150px;
+      }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .nav-bar {
+        height: 140px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .menu-wrap {
+        height: 138px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .top-logo {
+        padding: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 410px;
+        height: 60px;
+        margin: 7px 0px;
+        background-color: rgb(26, 23, 31);
+        border-radius: 10px;
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
+    }
+
+    .top-square-wrap {
+        flex-direction: row-reverse;
+    }
+
+    .travelphotodice-sq {
+        height: 47px;
+    }
+
+    .nav-legado-buttons {
+        border: solid rgb(59, 35, 95) 3px;
+        border-radius: 21px;
+        height: 42px;
+        padding-top: 0px;
+    }
+
+    .legado-se-logo {
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        width: 180px;
+        height: 35px;
+        margin-top: 0px;
+      }
+      
+      .legado {
+        font-family: "Piazzolla", serif;
+        display: inline;
+        font-size: 30px;
+        line-height: 38px;
+        font-weight: 900;
+        margin-left: 5px;
+      }
+      
+      .tech {
+        font-family: "Roboto", sans-serif;
+        display: inline;
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 300;
+      }
+
+    .menus-container {
+        margin-bottom: 0px;
+        gap: 5px;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 6px 6px 3px 6px;
+    }
+
+    .sub-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 3px 6px 6px 6px;
+    }
+      
+    .button {
+        font-weight: 100;
+        font-size: 14px;
+        padding: 3px 10px;
+        transition: 0.2s;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    }
+
+    .sub-button {
+        font-weight: 100;
+        font-size: 11px;
+        cursor: pointer;
+        border: none;
+        padding: 3px 10px;
+        margin-bottom: 5px;
+    }
+
+    .button:hover {
+        padding: 6px 13px;
+        margin: -3px;
+      }
+
+    .sub-button:hover {
+        padding: 6px 13px;
+        margin: -3px;
+      }
+    
+    .nav-links img {                /* Gäller alla bild-element under nav-links */
+        height: 25px;
+        width: 25px;
+    }
+
+    .main-page {
+        scroll-behavior: smooth;
+        flex-direction: column;
+        display: flex;
+        gap: 0px;
+    }
+
+    .about-me {
+        margin: 10px auto;
+        top: 140px;
+        padding: 8px 12px 8px 12px;
+        max-width: 400px;
+        gap: 10px;
+    }
+
+    .content-photo-right {
+        margin: 10px auto;
+        top: 140px;
+        padding: 8px 12px 8px 12px;
+        max-width: 400px;
+        gap: 10px;
+    }
+
+    .content-photo-left {
+        margin: 10px auto;
+        top: 140px;
+        padding: 8px 12px 8px 12px;
+        max-width: 400px;
+        gap: 10px;
+    }
+
+    #jimmy-legado-holmevi-portrait {
+        margin-top: 0px;
+        width: 380px;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .content-image {
+        margin-top: 0px;
+        width: 380px;
+        border-radius: 10px;
+        height: auto;
+    }
+    
+    #name {
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #profession {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .content-section {
+        top: 45px;
+        max-width: 400px;
+        height: fit-content;
+    }
+
+    button {
+        height: 40px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .end {
+        top: 105px;
+    }
+}
+
+@media screen and (max-width: 430px) { /* Lit4en iPhone*/
+    html, body {
+        scroll-padding-top: 145px;
+      }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .nav-bar {
+        height: 125px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .menu-wrap {
+        height: 110px;
+        width: 100vw;
+        padding: 0px;
+        flex-direction: column-reverse;
+    }
+
+    .top-logo {
+        padding: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        width: 340px;
+        height: 51px;
+        margin: 0px;
+        background-color: rgb(26, 23, 31);
+        border-radius: 10px;
+        border-top-left-radius: 26px;
+        border-bottom-left-radius: 26px;
+    }
+
+    .top-square-wrap {
+        flex-direction: row-reverse;
+    }
+
+    .travelphotodice-sq {
+        height: 38px;
+        width: 60px;
+    }
+
+    .nav-legado-buttons {
+        border: solid rgb(59, 35, 95) 3px;
+        border-radius: 21px;
+        height: 42px;
+        padding-top: 0px;
+    }
+
+    .legado-se-logo {
+        border-top-left-radius: 18px;
+        border-bottom-left-radius: 18px;
+        width: 180px;
+        height: 35px;
+        margin-top: 0px;
+      }
+      
+      .legado {
+        font-family: "Piazzolla", serif;
+        display: inline;
+        font-size: 22px;
+        line-height: 32px;
+        font-weight: 900;
+        margin-left: 5px;
+      }
+      
+      .tech {
+        font-family: "Roboto", sans-serif;
+        display: inline;
+        font-size: 23px;
+        line-height: 22px;
+        font-weight: 300;
+      }
+
+    .menus-container {
+        margin-bottom: 0px;
+        gap: 5px;
+    }
+
+    .main-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 340px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 3px 6px 0px 6px;
+    }
+
+    .sub-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 340px;
+        gap: 10px;
+        flex-direction: row;
+        margin: 0px 6px 0px 6px;
+    }
+      
+    .button {
+        font-weight: 100;
+        font-size: 10px;
+        padding: 3px 10px;
+        transition: 0.2s;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    }
+
+    .sub-button {
+        font-weight: 100;
+        font-size: 8px;
+        cursor: pointer;
+        border: none;
+        padding: 3px 10px;
+        margin-bottom: 5px;
+    }
+
+    .button:hover {
+        padding: 6px 13px;
+        margin: -3px;
+      }
+
+    .sub-button:hover {
+        padding: 6px 13px;
+        margin: -3px;
+      }
+    
+    .nav-links img {                /* Gäller alla bild-element under nav-links */
+        height: 25px;
+        width: 25px;
+    }
+
+    .main-page {
+        scroll-behavior: smooth;
+        flex-direction: column;
+        display: flex;
+        gap: 0px;
+    }
+
+    .about-me {
+        margin: 10px auto;
+        top: 130px;
+        padding: 8px 12px 8px 12px;
+        width: 340px;
+        gap: 10px;
+    }
+
+    .content-photo-right {
+        margin: 10px auto;
+        top: 130px;
+        padding: 8px 12px 8px 12px;
+        width: 340px;
+        gap: 10px;
+    }
+
+    .content-photo-left {
+        margin: 10px auto;
+        top: 130px;
+        padding: 8px 12px 8px 12px;
+        width: 340px;
+        gap: 10px;
+    }
+
+    #jimmy-legado-holmevi-portrait {
+        margin-top: 0px;
+        width: 320px;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .content-image {
+        margin-top: 0px;
+        width: 320px;
+        border-radius: 10px;
+        height: auto;
+    }
+    
+    #name {
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #profession {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .content-section {
+        top: 45px;
+        max-width: 400px;
+        height: fit-content;
+    }
+
+    button {
+        height: 40px;
+        width: 200px;
+        font-size: 18px;
+    }
+
+    .end {
+        top: 95px;
+    }
+}
